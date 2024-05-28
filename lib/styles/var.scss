@@ -1,0 +1,394 @@
+:root {
+    // 背景
+    --cun-bgcolor-0: rgb(255, 255, 255);
+    --cun-bgcolor-1: rgb(250, 250, 250);
+    --cun-bgcolor-2: rgb(245, 245, 245);
+    --cun-bgcolor-3: rgb(235, 235, 235);
+    --cun-bgcolor-4: rgb(225, 225, 225);
+    --cun-bgcolor-5: rgb(215, 215, 215);
+    --cun-bgcolor-6: rgb(205, 205, 205);
+    --cun-bgcolor-7: rgb(195, 195, 195);
+    --cun-bgcolor-8: rgb(185, 185, 185);
+    --cun-bgcolor-9: rgb(175, 175, 175);
+    // 背景反相
+    --cun-bgcolor-0-invert: rgb(20, 20, 20);
+    --cun-bgcolor-1-invert: rgb(30, 30, 30);
+    --cun-bgcolor-2-invert: rgb(40, 40, 40);
+    --cun-bgcolor-3-invert: rgb(50, 50, 50);
+    --cun-bgcolor-4-invert: rgb(60, 60, 60);
+    --cun-bgcolor-5-invert: rgb(70, 70, 70);
+    --cun-bgcolor-6-invert: rgb(80, 80, 80);
+    --cun-bgcolor-7-invert: rgb(90, 90, 90);
+    --cun-bgcolor-8-invert: rgb(110, 110, 110);
+    --cun-bgcolor-9-invert: rgb(120, 120, 120);
+    // 字体颜色
+    --cun-text-color-0: rgb(20, 20, 20);
+    --cun-text-color-1: rgb(30, 30, 30);
+    --cun-text-color-2: rgb(50, 50, 50);
+    --cun-text-color-3: rgb(70, 70, 70);
+    --cun-text-color-4: rgb(90, 90, 90);
+    --cun-text-color-5: rgb(110, 110, 110);
+    --cun-text-color-6: rgb(130, 130, 130);
+    --cun-text-color-7: rgb(150, 150, 150);
+    --cun-text-color-8: rgb(170, 170, 170);
+    --cun-text-color-9: rgb(190, 190, 190);
+    // 反相
+    --cun-text-color-0-invert: rgb(255, 255, 255);
+    --cun-text-color-1-invert: rgb(235, 235, 235);
+    --cun-text-color-2-invert: rgb(215, 215, 215);
+    --cun-text-color-3-invert: rgb(195, 195, 195);
+    --cun-text-color-4-invert: rgb(175, 175, 175);
+    --cun-text-color-5-invert: rgb(155, 155, 155);
+    --cun-text-color-6-invert: rgb(135, 135, 135);
+    --cun-text-color-7-invert: rgb(115, 115, 115);
+    --cun-text-color-8-invert: rgb(95, 95, 95);
+    --cun-text-color-9-invert: rgb(75, 75, 75);
+    // 色彩系统
+    --cun-color-red: rgb(235, 78, 61);
+    --cun-color-red-dark: rgb(202, 52, 35);
+    --cun-color-red-light: rgba(202, 52, 35, 0.13);
+    --cun-color-orange: rgb(241, 154, 55);
+    --cun-color-orange-dark: rgb(180, 96, 0);
+    --cun-color-orange-light: rgba(254, 135, 0, 0.13);
+    --cun-color-yellow: rgb(232, 189, 46);
+    --cun-color-yellow-dark: rgb(156, 128, 25);
+    --cun-color-yellow-light: rgba(184, 151, 33, 0.13);
+    --cun-color-green: rgb(36, 195, 97);
+    --cun-color-green-dark: rgb(46, 148, 47);
+    --cun-color-green-light: rgba(56, 144, 58, 0.13);
+    --cun-color-mint: rgb(90, 196, 189);
+    --cun-color-mint-dark: rgb(33, 102, 97);
+    --cun-color-mint-light: rgba(46, 134, 128, 0.13);
+    --cun-color-teal: rgb(90, 174, 196);
+    --cun-color-teal-dark: rgb(37, 97, 112);
+    --cun-color-teal-light: rgba(49, 123, 141, 0.13);
+    --cun-color-cyan: rgb(89, 171, 225);
+    --cun-color-cyan-dark: rgb(41, 105, 148);
+    --cun-color-cyan-light: rgba(52, 131, 184, 0.13);
+    --cun-color-blue: rgb(52, 120, 246);
+    --cun-color-blue-dark: rgb(27, 84, 191);
+    --cun-color-blue-light: rgba(30, 93, 210, 0.13);
+    --cun-color-indigo: rgb(88, 86, 207);
+    --cun-color-indigo-dark: rgb(53, 51, 157);
+    --cun-color-indigo-light: rgba(53, 51, 157, 0.13);
+    --cun-color-purple: rgb(162, 88, 215);
+    --cun-color-purple-dark: rgb(100, 43, 140);
+    --cun-color-purple-light: rgba(123, 58, 170, 0.13);
+    --cun-color-pink: rgb(235, 68, 90);
+    --cun-color-pink-dark: rgb(156, 29, 46);
+    --cun-color-pink-light: rgba(186, 35, 55, 0.13);
+    --cun-color-brown: rgb(157, 133, 99);
+    --cun-color-brown-dark: rgb(86, 67, 40);
+    --cun-color-brown-light: rgba(110, 86, 53, 0.13);
+    --cun-color-gray: rgb(142, 142, 147);
+    --cun-color-gray-dark: rgb(83, 83, 83);
+    --cun-color-gray-light: rgba(83, 83, 83, 0.13);
+    --cun-color-black: var(--cun-bgcolor-2-invert);
+    --cun-color-black-dark: var(--cun-bgcolor-0-invert);
+    --cun-color-black-light: var(--cun-bgcolor-5);
+    // 成功
+    --cun-color-success: var(--cun-color-green);
+    --cun-color-success-dark: var(--cun-color-green-dark);
+    --cun-color-success-light: var(--cun-color-green-light);
+    // 常规
+    --cun-color-normal: var(--cun-color-gray);
+    --cun-color-normal-dark: var(--cun-color-gray-dark);
+    --cun-color-normal-light: var(--cun-color-gray-light);
+    // 危险
+    --cun-color-danger: var(--cun-color-red);
+    --cun-color-danger-dark: var(--cun-color-red-dark);
+    --cun-color-danger-light: var(--cun-color-red-light);
+    // 错误
+    --cun-color-error: var(--cun-color-red);
+    --cun-color-error-dark: var(--cun-color-red-dark);
+    --cun-color-error-light: var(--cun-color-red-light);
+    // 警告
+    --cun-color-warning: var(--cun-color-orange);
+    --cun-color-warning-dark: var(--cun-color-orange-dark);
+    --cun-color-warning-light: var(--cun-color-orange-light);
+    // 提示
+    --cun-color-info: var(--cun-color-blue);
+    --cun-color-info-dark: var(--cun-color-blue-dark);
+    --cun-color-info-light: var(--cun-color-blue-light);
+    // 主题色
+    --cun-color-primary: var(--cun-color-blue);
+    --cun-color-primary-dark: var(--cun-color-blue-dark);
+    --cun-color-primary-light: var(--cun-color-blue-light);
+
+    // 全局
+    --cun-color-white: #fff;
+    --cun-color-white-text: rgba(255, 255, 255, 0.9);
+
+    --cun-disabled-opacity: 0.5;
+    --cun-box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.5);
+
+    // 圆角
+    --cun-border-radius-mini: 4px;
+    --cun-border-radius-small: 8px;
+    --cun-border-radius-medium: 12px;
+    --cun-border-radius-large: 16px;
+    // 边界
+    --cun-border-0: 1px solid rgb(245, 245, 245);
+    --cun-border-1: 1px solid rgb(235, 235, 235);
+    --cun-border-2: 1px solid rgb(225, 225, 225);
+    --cun-border-3: 1px solid rgb(215, 215, 215);
+    --cun-border-4: 1px solid rgb(205, 205, 205);
+    --cun-border-5: 1px solid rgb(195, 195, 195);
+    --cun-border-6: 1px solid rgb(185, 185, 185);
+    --cun-border-7: 1px solid rgb(175, 175, 175);
+    --cun-border-8: 1px solid rgb(165, 165, 165);
+    --cun-border-9: 1px solid rgb(155, 155, 155);
+    // 标题
+    --cun-title-bold: 800;
+    // 表单样式
+    --cun-form-border-width: 2px;
+    --cun-form-transition: all 0.2s cubic-bezier(0.3, 1.3, 0.3, 1);
+    --cun-form-border-color: rgb(245, 245, 245);
+    --cun-form-border-color-hover: rgb(211, 209, 209);
+    --cun-form-ouline: 0px var(--cun-color-primary-light) solid;
+    // 表单尺寸
+    --cun-form-input-padding-small: 2px 8px;
+    --cun-form-input-padding-medium: 4px 10px;
+    --cun-form-input-padding-large: 6px 12px;
+    --cun-form-item-height-small: 26px;
+    --cun-form-item-height-medium: 30px;
+    --cun-form-item-height-large: 34px;
+    --cun-form-input-line-height-small: 22px;
+    --cun-form-input-line-height-medium: 24px;
+    --cun-form-input-line-height-large: 26px;
+    --cun-form-font-size-small: 13px;
+    --cun-form-font-size-medium: 14px;
+    --cun-form-font-size-large: 16px;
+    // 表单背景
+    --cun-form-bgcolor: rgb(243, 243, 243);
+    --cun-form-bgcolor-hover: rgb(228, 228, 228);
+    --cun-form-bgcolor-active: rgb(215, 215, 215);
+    --cun-form-bgcolor-focus: rgb(255, 255, 255);
+    --cun-form-border-color-active: rgba(0, 0, 0, 0.22);
+    --cun-form-border-color-focus: var(--cun-color-primary);
+    // form icon
+    --cun-form-icon-opacity: 1;
+    --cun-form-icon-opacity-hover: 0.8;
+    --cun-form-icon-opacity-active: 1;
+    // checkbox
+    --cun-checkbox-block-color: var(--cun-bgcolor-2);
+    --cun-checkbox-border-color: var(--cun-bgcolor-4);
+    --cun-checkbox-color: var(--cun-color-primary);
+    --cun-checkbox-color-light: var(--cun-color-primary-light);
+    --cun-checkbox-border-color-hover: var(--cun-color-primary);
+    --cun-radio-block-color: var(--cun-bgcolor-2);
+    --cun-radio-border-color: var(--cun-bgcolor-4);
+    --cun-radio-border-color-hover: var(--cun-color-primary);
+    --cun-radio-color: var(--cun-color-primary);
+    --cun-radio-color-light: var(--cun-color-primary-light);
+    // tabs
+    --cun-tabs-active-color: #fff;
+    // dialog / modal
+    --cun-modal-bgcolor: rgba(0, 0, 0, 0.6);
+    //  dialog / modal box
+    --cun-modal-box-bgcolor: #fff;
+    // loading
+    --cun-loading-bgcolor: rgb(255, 255, 255, 0.8);
+    // povpoer
+    --cun-popover-bgcolor: #fff;
+    // message
+    --cun-message-bgcolor: rgba(255, 255, 255, 1);
+    // notification
+    --cun-notification-bgcolor: rgba(255, 255, 255, 1);
+    // popover
+    --cun-popover-border: 1px rgb(204, 204, 216) solid;
+    --cun-popover-box-shadow: 0 18px 36px #0000001e;
+    --cun-tooltip-box-left-shadow: 4px 0px 10px #00000027;
+    --cun-tooltip-box-right-shadow: -4px 0px 10px #00000027;
+    --cun-tooltip-box-top-shadow: 0 4px 10px #00000027;
+    --cun-tooltip-box-bottom-shadow: 0 -4px 10px #00000027;
+    // table
+    --cun-table-header-bgColor: rgb(241, 241, 241);
+    --cun-table-border: 1px #f6f5f8 solid;
+    --cun-table-tr-selected: #eef3ff;
+    --cun-table-scroll-line-color-start: rgba(0, 0, 0, 0);
+    --cun-table-scroll-line-color-end: rgba(0, 0, 0, 0.15);
+    --cun-backdrop-bg: rgba(255, 255, 255, 0.45);
+    --cun-backdrop-bg-active: rgba(0, 0, 0, 0.05);
+    --cun-tooltip-bg: #000;
+    --cun-tooltip-color: #fff;
+}
+
+.cun-dark {
+    // 色彩系统
+
+    --cun-color-red: rgba(235, 86, 69, 0.862);
+    --cun-color-red-dark: rgb(255, 97, 89);
+    --cun-color-red-light: rgba(255, 106, 89, 0.13);
+    --cun-color-orange: rgba(242, 163, 60, 0.764);
+    --cun-color-orange-dark: rgb(255, 196, 77);
+    --cun-color-orange-light: rgba(255, 178, 77, 0.13);
+    --cun-color-yellow: rgba(255, 224, 84, 0.774);
+    --cun-color-yellow-dark: rgb(255, 246, 65);
+    --cun-color-yellow-light: rgba(255, 220, 65, 0.13);
+    --cun-color-green: rgb(29, 160, 75);
+    --cun-color-green-dark: rgb(94, 241, 136);
+    --cun-color-green-light: rgba(105, 206, 103, 0.13);
+    --cun-color-mint: rgba(131, 210, 206, 0.755);
+    --cun-color-mint-dark: rgb(144, 229, 225);
+    --cun-color-mint-light: rgba(144, 229, 225, 0.13);
+    --cun-color-teal: rgba(128, 193, 217, 0.787);
+    --cun-color-teal-dark: rgb(139, 210, 236);
+    --cun-color-teal-light: rgba(139, 210, 236, 0.13);
+    --cun-color-cyan: rgba(106, 196, 221, 0.762);
+    --cun-color-cyan-dark: rgb(116, 217, 244);
+    --cun-color-cyan-light: rgba(116, 216, 244, 0.13);
+    --cun-color-blue: rgb(55, 117, 217);
+    --cun-color-blue-dark: rgb(60, 177, 255);
+    --cun-color-blue-light: rgba(78, 146, 255, 0.13);
+    --cun-color-indigo: rgb(95, 93, 222);
+    --cun-color-indigo-dark: rgb(119, 105, 245);
+    --cun-color-indigo-light: rgba(107, 105, 245, 0.13);
+    --cun-color-purple: rgba(179, 96, 234, 0.869);
+    --cun-color-purple-dark: rgb(214, 87, 253);
+    --cun-color-purple-light: rgba(199, 114, 255, 0.13);
+    --cun-color-pink: rgba(237, 94, 115, 0.823);
+    --cun-color-pink-dark: rgb(255, 73, 100);
+    --cun-color-pink-light: rgba(234, 75, 99, 0.13);
+    --cun-color-brown: rgba(167, 143, 109, 0.9);
+    --cun-color-brown-dark: rgb(255, 199, 121);
+    --cun-color-brown-light: rgba(203, 175, 136, 0.13);
+    --cun-color-gray: rgb(152, 152, 157);
+    --cun-color-gray-dark: rgb(240, 240, 240);
+    --cun-color-gray-light: rgba(209, 209, 209, 0.13);
+    --cun-color-black: var(--cun-bgcolor-2-invert);
+    --cun-color-black-dark: var(--cun-bgcolor-0-invert);
+    --cun-color-black-light: var(--cun-bgcolor-1);
+
+    --cun-color-success: var(--cun-color-green);
+    --cun-color-success-dark: var(--cun-color-green-dark);
+    --cun-color-success-light: var(--cun-color-green-light);
+    // 常规
+    --cun-color-normal: var(--cun-color-gray);
+    --cun-color-normal-dark: var(--cun-color-gray-dark);
+    --cun-color-normal-light: var(--cun-color-gray-light);
+    // 危险
+    --cun-color-danger: var(--cun-color-red);
+    --cun-color-danger-dark: var(--cun-color-red-dark);
+    --cun-color-danger-light: var(--cun-color-red-light);
+    // 错误
+    --cun-color-error: var(--cun-color-red);
+    --cun-color-error-dark: var(--cun-color-red-dark);
+    --cun-color-error-light: var(--cun-color-red-light);
+    // 警告
+    --cun-color-warning: var(--cun-color-orange);
+    --cun-color-warning-dark: var(--cun-color-orange-dark);
+    --cun-color-warning-light: var(--cun-color-orange-light);
+    // 提示
+    --cun-color-info: var(--cun-color-blue);
+    --cun-color-info-dark: var(--cun-color-blue-dark);
+    --cun-color-info-light: var(--cun-color-blue-light);
+    // 全局
+    --cun-color-white: #fff;
+    --cun-color-white-text: rgba(255, 255, 255, 0.9);
+
+    // 全局
+    --cun-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    // 背景
+    --cun-bgcolor-0: rgb(26, 27, 32);
+    --cun-bgcolor-1: rgb(39, 40, 46);
+    --cun-bgcolor-2: rgb(52, 53, 60);
+    --cun-bgcolor-3: rgb(65, 66, 73);
+    --cun-bgcolor-4: rgb(78, 79, 86);
+    --cun-bgcolor-5: rgb(91, 92, 99);
+    --cun-bgcolor-6: rgb(104, 105, 112);
+    --cun-bgcolor-7: rgb(117, 118, 125);
+    --cun-bgcolor-8: rgb(130, 131, 138);
+    --cun-bgcolor-9: rgb(143, 144, 151);
+    // 背景反相
+    --cun-bgcolor-0-invert: rgb(255, 255, 255);
+    --cun-bgcolor-1-invert: rgb(245, 245, 245);
+    --cun-bgcolor-2-invert: rgb(235, 235, 235);
+    --cun-bgcolor-3-invert: rgb(225, 225, 225);
+    --cun-bgcolor-4-invert: rgb(215, 215, 215);
+    --cun-bgcolor-5-invert: rgb(205, 205, 205);
+    --cun-bgcolor-6-invert: rgb(195, 195, 195);
+    --cun-bgcolor-7-invert: rgb(185, 185, 185);
+    --cun-bgcolor-8-invert: rgb(175, 175, 175);
+    --cun-bgcolor-9-invert: rgb(165, 165, 165);
+    // 反相
+    --cun-text-color-0: rgb(255, 255, 255);
+    --cun-text-color-1: rgb(235, 235, 235);
+    --cun-text-color-2: rgb(215, 215, 215);
+    --cun-text-color-3: rgb(195, 195, 195);
+    --cun-text-color-4: rgb(175, 175, 175);
+    --cun-text-color-5: rgb(155, 155, 155);
+    --cun-text-color-6: rgb(135, 135, 135);
+    --cun-text-color-7: rgb(115, 115, 115);
+    --cun-text-color-8: rgb(95, 95, 95);
+    --cun-text-color-9: rgb(75, 75, 75);
+    // 字体颜色
+    --cun-text-color-0-invert: rgb(0, 0, 0);
+    --cun-text-color-1-invert: rgb(30, 30, 30);
+    --cun-text-color-2-invert: rgb(50, 50, 50);
+    --cun-text-color-3-invert: rgb(70, 70, 70);
+    --cun-text-color-4-invert: rgb(90, 90, 90);
+    --cun-text-color-5-invert: rgb(110, 110, 110);
+    --cun-text-color-6-invert: rgb(130, 130, 130);
+    --cun-text-color-7-invert: rgb(150, 150, 150);
+    --cun-text-color-8-invert: rgb(170, 170, 170);
+    --cun-text-color-9-invert: rgb(190, 190, 190);
+    // 边界
+    --cun-border-0: 1px solid rgb(36, 37, 42);
+    --cun-border-1: 1px solid rgb(49, 50, 56);
+    --cun-border-2: 1px solid rgb(62, 63, 70);
+    --cun-border-3: 1px solid rgb(75, 76, 83);
+    --cun-border-4: 1px solid rgb(88, 89, 96);
+    --cun-border-5: 1px solid rgb(101, 102, 109);
+    --cun-border-6: 1px solid rgb(114, 115, 122);
+    --cun-border-7: 1px solid rgb(127, 128, 135);
+    --cun-border-8: 1px solid rgb(140, 141, 148);
+    --cun-border-9: 1px solid rgb(153, 154, 161);
+    // 表单样式
+    --cun-form-border-color: rgb(77, 77, 77);
+    --cun-form-border-color-hover: rgb(59, 58, 58);
+    --cun-form-border-color-focus: var(--cun-color-primary);
+    --cun-form-ouline: 0px var(--cun-color-primary-light) solid;
+    // tabs
+    --cun-tabs-active-color: rgb(14, 14, 14);
+    // 表单背景
+    --cun-form-bgcolor: #27282d;
+    --cun-form-bgcolor-hover: #2a2a2f;
+    --cun-form-bgcolor-active: #202025;
+    --cun-form-bgcolor-focus: #1f1f22;
+    // dialog / modal
+    --cun-modal-bgcolor: rgba(0, 0, 0, 0.45);
+    //  dialog / modal box
+    --cun-modal-box-bgcolor: #323339;
+    // loading
+    --cun-loading-bgcolor: rgba(0, 0, 0, 0.7);
+    // povpoer
+    --cun-popover-bgcolor: #323339;
+    // message
+    --cun-message-bgcolor: #4d4d58;
+    // notification
+    --cun-notification-bgcolor: #4d4d58;
+    // popover
+    --cun-popover-border: 1px rgba(255, 255, 255, 0.1) solid;
+    // table
+    --cun-table-header-bgColor: rgb(12, 12, 12);
+    --cun-table-border: 1px rgba(255, 255, 255, 0.05) solid;
+    --cun-table-tr-selected: #3f4350;
+    --cun-table-scroll-line-color-start: rgba(0, 0, 0, 0);
+    --cun-table-scroll-line-color-end: rgba(0, 0, 0, 0.2);
+    // checkbox
+    --cun-checkbox-block-color: var(--cun-bgcolor-2);
+    --cun-checkbox-border-color: var(--cun-bgcolor-4);
+    --cun-checkbox-color: var(--cun-color-primary);
+    --cun-checkbox-color-light: var(--cun-color-primary-light);
+    --cun-checkbox-border-color-hover: var(--cun-color-primary);
+    --cun-radio-block-color: var(--cun-bgcolor-2);
+    --cun-radio-border-color: var(--cun-bgcolor-4);
+    --cun-radio-border-color-hover: var(--cun-color-primary);
+    --cun-radio-color: var(--cun-color-primary);
+    --cun-radio-color-light: var(--cun-color-primary-light);
+    --cun-backdrop-bg: rgba(33, 35, 40, 0.75);
+    --cun-backdrop-bg-active: rgba(255, 255, 255, 0.1);
+    --cun-tooltip-bg: #eaeaea;
+    --cun-tooltip-color: #000;
+}
