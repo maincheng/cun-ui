@@ -37,8 +37,12 @@
             value: '基础',
             children: [
                 {
-                label: 'Button',
-                value: '/Button'
+                    label: 'Avatar',
+                    value: '/Avatar'
+                },
+                {
+                    label: 'Button',
+                    value: '/Button'
                 },
 
                 {
@@ -46,12 +50,28 @@
                     value: '/Tag'
                 },
                 {
-                label: 'TextTrim',
-                value: '/TextTrim'
+                    label: 'Badge',
+                    value: '/Badge'
                 },
                 {
-                label: 'Icon',
-                value: '/icon'
+                    label: 'Title',
+                    value: '/Title'
+                },
+                {
+                    label: 'TextTrim',
+                    value: '/TextTrim'
+                },
+                {
+                    label: 'Flex',
+                    value: '/Flex'
+                },
+                {
+                    label: 'Mark',
+                    value: '/Mark'
+                },
+                {
+                    label: 'Icon',
+                    value: '/icon'
                 }
             ]
         },
@@ -60,6 +80,10 @@
             label: '导航',
             value: '导航',
             children: [
+                {
+                    label: 'BackTop',
+                    value: '/BackTop'
+                },
                 {
                     label: 'Menu',
                     value: '/Menu',

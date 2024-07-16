@@ -1,0 +1,22 @@
+<template>
+    <cun-flex wrap x="start" y="end" gap="20">
+        <cun-avatar
+            :width="30"
+            :height="30"
+            src="../../../../src/assets/images/程.png"
+            alt="avatar"
+        />
+        <cun-avatar
+            :width="40"
+            :height="40"
+            src="../../../../src/assets/images/程.png"
+            alt="avatar"
+        />
+        <cun-avatar
+            :width="50"
+            :height="50"
+            src="../../../../src/assets/images/程.png"
+            alt="avatar"
+        />
+    </cun-flex>
+</template>

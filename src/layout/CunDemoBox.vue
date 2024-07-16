@@ -64,20 +64,23 @@
             </div>
             <div v-if="code" class="hl-pre cun-scrollbar" :style="style">
                 <div class="code-header">
-                    <span class="code-type">{{ codeType }}</span>
                     <cun-flex
                         gap="10"
+                        direction="x"
+                        x="end"
+                        class="copy-box"
+                    >
+                        <span class="code-type">{{ codeType }}</span>
+                        <cun-icon 
+                        :type="'clipboard'" 
+                        stroke-width="1"
                         v-tooltip="{
                             content: '点击复制',
                             placement: 'bottom',
                             trigger: 'mouseenter'
                         }"
-                        direction="x"
-                        x="end"
-                        class="copy-box"
                         @click="copyCode"
-                    >
-                        <cun-icon :type="'clipboard'" stroke-width="1" />
+                        class="copy-icon" />
                     </cun-flex>
                 </div>
                 <div class="pre-box">
@@ -118,7 +121,7 @@
 
             .code-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             padding: 10px;
             background-color: var(--cun-bgcolor-1);
@@ -130,10 +133,13 @@
             }
 
             .copy-box {
-                width: 40px;
-                border-radius: var(--lew-border-radius-small);
+                width: 45px;
+                border-radius: var(--cun-border-radius-small);
                 transition: all 0.15s;
-                cursor: pointer;
+
+                .copy-icon {
+                    cursor: pointer;
+                }
 
                 .name {
                     white-space: nowrap;

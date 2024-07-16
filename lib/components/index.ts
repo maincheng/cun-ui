@@ -5,3 +5,7 @@ export * from './text-trim';
 export * from './menu';
 export * from './title';
 export * from './flex';
+export * from './avatar';
+export * from './badge';
+export * from './mark';
+export * from './backtop';

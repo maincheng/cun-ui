@@ -15,6 +15,7 @@ export default defineConfig({
   server: {
     open: true,
     port: 5174,
+    host:'0.0.0.0',
     hmr: true,
   },
   resolve: {
