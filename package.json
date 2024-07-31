@@ -1,12 +1,39 @@
 {
   "name": "cun-ui-main",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "2.1.1",
+  "description": "组件库尝试",
   "type": "module",
+  "author": "cyk",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build --mode demo",
+    "build:lib": "vite build --mode lib",
     "preview": "vite preview"
+  },
+  "files": [
+    "dist/components/**/*.ts",
+    "dist/directives/**/*.ts",
+    "dist/hooks/**/*.ts",
+    "dist/utils/**/*.ts",
+    "dist/index.mjs",
+    "dist/index.umd.js",
+    "dist/style.css",
+    "dist/index.d.ts",
+    "package.json",
+    "README.md"
+  ],
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+      ".": {
+          "import": "./dist/index.mjs",
+          "require": "./dist/index.umd.js",
+          "types": "./dist/index.d.ts"
+      },
+      "./style": "./dist/style.css"
   },
   "dependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",

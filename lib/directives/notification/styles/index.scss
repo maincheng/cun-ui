@@ -1,0 +1,106 @@
+#cun-notification {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 30px;
+    top: 20px;
+    z-index: 999;
+    .cun-notification {
+        position: relative;
+        width: auto;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        width: 300px;
+        max-height: 0px;
+        border: var(--cun-popover-border);
+        transition: all 0.25s ease, max-height 1s, opacity 0.25s;
+        opacity: 0;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.07);
+        font-size: 14px;
+        border-radius: var(--cun-border-radius-medium);
+        overflow: hidden;
+        background-color: var(--cun-backdrop-bg) !important;
+        backdrop-filter: blur(20px);
+        .cun-notification-box {
+            display: flex;
+            width: 100%;
+            padding: 15px 18px 15px 20px;
+            box-sizing: border-box;
+            .cun-notification-icon {
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+                margin-top: 1px;
+            }
+            .cun-notification-body {
+                width: calc(100% - 40px);
+                .cun-notification-title {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: var(--cun-text-color-2);
+                }
+                .cun-notification-content {
+                    width: 100%;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: var(--cun-text-color-4);
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                }
+            }
+            .cun-notification-close-icon {
+                position: absolute;
+                top: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                right: 12px;
+                padding: 2px;
+                border-radius: var(--cun-border-radius-small);
+                box-sizing: border-box;
+                cursor: pointer;
+                user-select: none;
+                color: var(--cun-text-color-5);
+                &:hover {
+                    color: var(--cun-text-color-2);
+                    background: rgba($color: #000000, $alpha: 0.05);
+                }
+                &:active {
+                    color: var(--cun-text-color-0);
+                    background: rgba($color: #000000, $alpha: 0.15);
+                }
+            }
+        }
+    }
+    .cun-notification-normal .cun-notification-icon {
+        color: var(--cun-color-normal-dark);
+    }
+    .cun-notification-error .cun-notification-icon {
+        color: var(--cun-color-error-dark);
+    }
+    .cun-notification-success .cun-notification-icon {
+        color: var(--cun-color-success-dark);
+    }
+    .cun-notification-info .cun-notification-icon {
+        color: var(--cun-color-info-dark);
+    }
+    .cun-notification-warning .cun-notification-icon {
+        color: var(--cun-color-warning-dark);
+    }
+    .cun-notificatishow {
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .cun-notification-hidden {
+        max-height: 100vh;
+        opacity: 0;
+    }
+}

@@ -13,3 +13,4 @@ declare module 'cun-ui';
 declare const CunMessage;
 declare const CunDialog;
 declare module '@/lib/utils';
+declare const CunNotification: typeof import('../lib/directives')['CunNotification'];

@@ -90,18 +90,185 @@
                     tagText: 'New',
                     tagColor: 'success'
                 },
-
+                {
+                    label: 'Dropdown',
+                    value: '/Dropdown'
+                },
+                {
+                    label: 'Breadcrumb',
+                    value: '/Breadcrumb'
+                }
             ]
         },
+        {
+            label: '表单',
+            value: '表单',
+            children: [
+                {
+                    label: 'Form',
+                    value: '/Form',
+                    tagText: 'New',
+                    tagColor: 'success'
+                },
+                {
+                    label: 'Input',
+                    value: '/Input'
+                },
+                {
+                    label: 'Textarea',
+                    value: '/Textarea'
+                },
+                // {
+                //     clabel: '高级输入框',
+                //     label: 'InputPro',
+                //     value: '/InputPro',
+                //
+                //     color: 'warning',
+                // },
+                {
+                    label: 'InputTag',
+                    value: '/InputTag'
+                },
+                {
+                    label: 'Checkbox',
+                    value: '/Checkbox'
+                },
+                {
+                    label: 'Radio',
+                    value: '/Radio'
+                },
+                {
+                    label: 'Tabs',
+                    value: '/Tabs'
+                },
+                {
+                    label: 'Select',
+                    value: '/Select'
+                },
+                {
+                    label: 'SelectMultiple',
+                    value: '/SelectMultiple'
+                },
+                {
+                    label: 'DatePicker',
+                    value: '/DatePicker'
+                },
+                {
+                    label: 'DateRangePicker',
+                    value: '/DateRangePicker'
+                },
+                {
+                    label: 'Cascader',
+                    value: '/Cascader',
+                    tagText: 'New',
+                    tagColor: 'green'
+                },
+                {
+                    label: 'TreeSelect',
+                    value: '/TreeSelect',
+                    tagText: 'Coming soon',
+                    tagColor: 'warning'
+                },
+                {
+                    label: 'Switch',
+                    value: '/Switch'
+                }
 
+                // {
+                //     clabel: '文件上传',
+                //     label: 'Upload',
+                //     value: '/Upload',
+                //
+                //
+                // },
+            ]
+        },
+        {
+            label: '数据展示',
+            value: '数据展示',
+            children: [
+                {
+                    label: 'Table',
+                    value: '/Table'
+                },
+                {
+                    label: 'Pagination',
+                    value: '/Pagination'
+                },
+                {
+                    label: 'MagicNumber',
+                    value: '/MagicNumber'
+                },
+                {
+                    label: 'Tree',
+                    value: '/Tree',
+                    tagText: 'New',
+                    tagColor: 'success'
+                }
+                // {
+                //     clabel: '折叠面板',
+                //     label: 'Collapse',
+                //     value: '/Collapse',
+                //
+                //
+                // },
+            ]
+        },
         {
             label: '反馈',
             value: '反馈',
             children: [
                 {
+                    label: 'Alert',
+                    value: '/Alert'
+                },
+                {
                     label: 'Message',
                     value: '/Message'
                 },
+                {
+                    label: 'Notification',
+                    value: '/Notification'
+                },
+                {
+                    label: 'Drawer',
+                    value: '/Drawer'
+                },
+                {
+                    label: 'Dialog',
+                    value: '/Dialog'
+                },
+                {
+                    label: 'Modal',
+                    value: '/Modal'
+                },
+                {
+                    label: 'Popok',
+                    value: '/Popok'
+                },
+                {
+                    label: 'Popover',
+                    value: '/Popover'
+                },
+
+                {
+                    label: 'Tooltip',
+                    value: '/Tooltip'
+                },
+                {
+                    label: 'Loading',
+                    value: '/Loading'
+                },
+                {
+                    label: 'Result',
+                    value: '/Result'
+                },
+                {
+                    label: 'Empty',
+                    value: '/Empty',
+                    tagText: 'New',
+                    tagColor: 'success'
+                }
             ]
         }
     ]
