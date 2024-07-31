@@ -56,7 +56,7 @@ export default defineConfig(({ mode }) => {
                 ? {
                     lib: {
                         entry: path.resolve(__dirname, './lib/index.ts'),
-                        name: 'lew-ui',
+                        name: 'cun-ui',
                         fileName: 'index'
                     },
                     minify: 'terser',
@@ -106,6 +106,5 @@ export default defineConfig(({ mode }) => {
                         }
                     }
                 }
-    }
-
-})
+    };
+});
